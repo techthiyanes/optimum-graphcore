@@ -139,7 +139,7 @@ class IPUConfig(BaseConfig):
         # Return all results from IPU to host
         # TODO: use this when sdk 2.4 is out.
         # opts.outputMode(poptorch.OutputMode.All)
-        opts.anchorMode(poptorch.AnchorMode.All)
+        opts.anchorMode(poptorch.AnchorMode.Default)
 
         if self.seed:
             opts.randomSeed(self.seed)
